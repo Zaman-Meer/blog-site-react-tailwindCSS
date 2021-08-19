@@ -42,7 +42,7 @@ export default function Profile() {
                 data.append("name", filename);
                 data.append("file", profilePicFile);
 
-                updatedUser.profilePic = `${process.env.REACT_APP_UPLOAD_SERVER_URL}${filename}`;
+                updatedUser.profilePic = `${process.env.REACT_APP_UPLOAD_SERVER_URL}/${filename}`;
                 try {
                    setMessage("");
                    setError("");
