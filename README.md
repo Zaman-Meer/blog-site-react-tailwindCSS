@@ -1,5 +1,5 @@
 
-Watch Live Demo : https://techblog-react.herokuapp.com/login
+Watch Live Demo : https://techblog-react.herokuapp.com
 
 # Getting Started with Create React App
 
