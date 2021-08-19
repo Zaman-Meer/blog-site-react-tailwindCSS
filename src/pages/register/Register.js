@@ -52,7 +52,7 @@ export default function Register() {
     return (
         <div className="max-content-width mx-auto min-h-screen flex flex-col">       
         <div className="flex flex-1 items-start justify-center">
-            <div className="rounded-lg sm:border-2 px-4 mt-12 lg:px-10 py-12 lg:max-w-xl sm:max-w-md w-full text-center">
+            <div className="rounded-lg sm:border-2 px-4 my-12 lg:px-10 py-12  lg:max-w-xl sm:max-w-md w-full text-center">
                 <form className="text-center" onSubmit={handleSubmit} autoComplete="off">
                 <h2 className="font-bold tracking-wider text-3xl mb-8 w-full text-gray-600">TechBlog</h2>
                     <h1 className="font-bold tracking-wider text-2xl mb-8 w-full text-gray-600">
