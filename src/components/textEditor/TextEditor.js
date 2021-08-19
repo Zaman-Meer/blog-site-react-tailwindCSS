@@ -6,7 +6,6 @@ const TextEditor =({value,onChange})=> {
   
   useLayoutEffect(()=>{
     setEditorValue(prevState=>RichTextEditor.createValueFromString(value, 'html'));
-    onChange( editorValue.toString('html') );
   },[value]);
 
 

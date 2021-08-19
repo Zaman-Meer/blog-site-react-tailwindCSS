@@ -112,6 +112,7 @@ const fetchPost=useCallback(
                  const prevCategories= postData?.categories?.map(category=>({label:category,value:category}));
                  setCategories(prevCategories);
                  setDescriptionOld(postData?.description);
+                 setDescription(postData?.description);
                  setPostAuthorId(postData?.authorId)
 
              }
