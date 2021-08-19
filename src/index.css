@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .menu-item{
+        @apply h-full px-2 md:px-3 pb-1 pt-3 relative items-center border-b-2 hover:text-gray-800 hover:border-gray-700   cursor-pointer;
+    }
+    .menu-dropdown-item{
+        @apply block  px-3 pt-1 hover:bg-gray-200 truncate;
+    }
+    .side-menu-sub-item {
+        @apply w-full block text-left text-xl font-nunito font-semibold opacity-90 px-8 py-2 border-b-2 border-gray-800 border-opacity-80
+    }
+    .side-menu-item {
+        @apply block text-left text-xl font-nunito font-semibold opacity-90 px-5 py-2 border-b-2 border-white border-opacity-50
+    }
+   
+    .pagination-item {
+        @apply sm:flex justify-center  items-center text-center  p-2  md:px-3 h-8 rounded-sm ring-1 ring-gray-400  hover:bg-gray-300  m-1 cursor-pointer; 
+    }  
+    .min-h-screen-cover{
+        
+        min-height: calc(100vh - 11rem);
+    }
+    .max-content-width {
+        max-width:1400px;
+    }
+    .post-data h1::first-letter, h2::first-letter, h3::first-letter, {
+        text-transform: uppercase;
+    }
+    .post-data h1{
+        text-align:left;
+        margin: .5rem;
+        margin-top:1rem;
+        font-size: 2rem;
+        color:rgb(19, 18, 18) !important;
+    }
+ 
+    .post-data h2{
+        font-size: 1.75rem;
+        color:rgb(19, 18, 18) !important;
+    }
+    .post-data h3{
+        font-size: 1.25rem;
+        color:rgb(19, 18, 18) !important;
+    }
+    .post-data p{
+        line-height: 2rem;
+        text-justify: newspaper;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+        text-indent: 2.5rem;
+    }
+    .post-data p::first-letter{
+        text-transform: uppercase;
+        font-size:1.2rem; 
+    }
+
+    .post-data ul,ol{
+        margin-left: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .post-data  li{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .text-indent{
+        text-indent: 2.5rem;
+    }
+    .tab-disabled{
+        cursor: not-allowed ;
+        pointer-events: none ;
+    }
+    .flc::first-letter{
+        text-transform: uppercase;
+    }
+    .img-h {
+        height:80px !important;
+    }
+    @media screen and (max-width: 480px) {
+        .post-data h1{
+            font-size: 1.5rem;
+        }
+     
+        .post-data h2{
+            font-size: 1.3rem;
+        }
+        .post-data h3{
+            font-size: 1.2rem;
+        }
+      }
+}
+
