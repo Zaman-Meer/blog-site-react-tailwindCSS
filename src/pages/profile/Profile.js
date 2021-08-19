@@ -38,7 +38,7 @@ export default function Profile() {
 
             if (profilePicFile) {
                 const data = new FormData();
-                const filename =`${user?.id}-${profilePicFile.name}`;
+                const filename =`${user?.id}.${profilePicFile.name?.charAt(profilePicFile.name.length-3)}${profilePicFile.name?.charAt(profilePicFile.name.length-2)}${profilePicFile.name?.charAt(profilePicFile.name.length-1)}`;
                 data.append("name", filename);
                 data.append("file", profilePicFile);
 
