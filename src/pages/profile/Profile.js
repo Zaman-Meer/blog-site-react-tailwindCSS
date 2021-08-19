@@ -41,13 +41,12 @@ export default function Profile() {
                 const filename =`${user?.id}.${profilePicFile.name?.charAt(profilePicFile.name.length-3)}${profilePicFile.name?.charAt(profilePicFile.name.length-2)}${profilePicFile.name?.charAt(profilePicFile.name.length-1)}`;
                 data.append("name", filename);
                 data.append("file", profilePicFile);
-
                 updatedUser.profilePic = `${process.env.REACT_APP_UPLOAD_SERVER_URL}/${filename}`;
                 try {
                    setMessage("");
                    setError("");
                   await axios.post(`${process.env.REACT_APP_SERVER_URL}/upload`, data,config);
-                  dispatch(UpdateUserProfilePic(`${process.env.REACT_APP_UPLOAD_SERVER_URL}${filename}`));
+                  dispatch(UpdateUserProfilePic(`${process.env.REACT_APP_UPLOAD_SERVER_URL}/${filename}`));
                 } catch (error) {
                     setError("Profile Picture could not updated!");
 
